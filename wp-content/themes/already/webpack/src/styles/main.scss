@@ -1,0 +1,15 @@
+//bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// Variables
+@import "src/styles/breakpoints";
+@import "src/styles/colors";
+
+// Fonts
+@import "src/styles/fonts";
+
+// Styles
+@import "src/styles/global";
+@import "src/styles/header";
+@import "src/styles/cars_listing";
+@import "src/styles/bonus_listing";

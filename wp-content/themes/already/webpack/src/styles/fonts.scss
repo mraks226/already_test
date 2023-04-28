@@ -1,0 +1,29 @@
+//fonts
+@font-face {
+  font-family: 'Rubik-Regular';
+  src: url('/wp-content/themes/already/assets/fonts/Rubik-Regular.ttf') format('truetype');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rubik-Medium';
+  src: url('/wp-content/themes/already/assets/fonts/Rubik-Medium.ttf') format('truetype');
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rubik-Bold';
+  src: url('/wp-content/themes/already/assets/fonts/Rubik-Bold.ttf') format('truetype');
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+// font variables
+$rubikRegular: 'Rubik-Regular', sans-serif;
+$rubikMedium: 'Rubik-Medium', sans-serif;
+$rubikBold: 'Rubik-Bold', sans-serif;

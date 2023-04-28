@@ -1,0 +1,111 @@
+.cars-listing {
+  &__wrapper {
+    padding: 88px 0;
+
+    @media (min-width: $tablet-screen) {
+      padding: 104px 0;
+    }
+  }
+
+  &__title, &__description {
+    text-align: center;
+    margin-bottom: 16px;
+
+    @media (min-width: $tablet-screen) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__title {
+
+  }
+
+  &__description {
+
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -12px;
+    //flex-direction: column;
+
+    @media (min-width: $tablet-screen) {
+      margin: -15px;
+    }
+  }
+
+  &__card-wrapper {
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+    padding: 12px;
+
+    @media (min-width: $sm-min-screen) {
+      max-width: 50%;
+    }
+
+    @media (min-width: $tablet-screen) {
+      max-width: 33.33%;
+      padding: 15px;
+    }
+  }
+
+  &__card {
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    background: #FFFFFF;
+    box-shadow: 0 0 40px rgba(99, 147, 137, 0.16);
+    border-radius: 16px;
+    transition: .25s;
+    height: 100%;
+
+    &:hover {
+      box-shadow: 0 16px 48px rgba(99, 147, 137, 0.4);
+
+      .cars-listing__card-image img {
+        transform: scale(1.5);
+      }
+    }
+
+    &-image {
+      overflow: hidden;
+      max-width: 130px;
+      width: 100%;
+      max-height: 130px;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      transition: .25s;
+    }
+
+    &-image img {
+      width: 130px;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 50%;
+      transition: .25s;
+    }
+
+    &-data {
+      display: flex;
+      flex-direction: column;
+      margin-left: 16px;
+
+      & > div {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+
+        &:not(:last-child) {
+          margin-bottom: 4px;
+        }
+
+        h6 {
+          margin: 0 8px 0 0;
+        }
+      }
+    }
+  }
+}
